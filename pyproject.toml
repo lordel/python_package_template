@@ -1,0 +1,32 @@
+[tool.ruff]
+line-length = 120
+select = [
+    "A",  # prevent using keywords that clobber python builtins
+    "B",  # bugbear: security warnings
+    "D",  # pydocstyle: usefule for pydoc comments
+    "E",  # pycodestyle: default
+    "F",  # pyflakes: defualt
+    "N",  # per8-naming: check variables, classes, and functions names
+    "Q",  # flake8-quotes: flags single quotes where double quotes would be preferred
+    "W",  # pycodestyle warnings
+    "ARG",  # flake8-unused-arguments
+    "ISC",  # implicit string concatenation
+    "NPY",  # NumPy-specific rules
+    "PD",  # pandas-vet rules
+    "RUF",  # the ruff developer's own rules
+    "SIM",  # flake8-simplify
+    "TD001",  # flake8-todos
+    "TD002",  # flake8-todos
+    "TD004",  # flake8-todos
+    "TD005",  # flake8-todos
+    "TD006",  # flake8-todos
+    "TD007",  # flake8-todos
+    # "FIX",  # flake8-fixme
+    "UP",  # alert you when better syntax is available in your python version 
+]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.black]
+line-length = 120
