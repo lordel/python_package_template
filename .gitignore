@@ -69,12 +69,12 @@ instance/
 .scrapy
 
 # Sphinx documentation
-**/docs/**
-!**/docs/
-!**/docs/_build/*
-!**/docs/_build/
-!**/docs/_build/html/*
-!**/docs/_build/html/
+docs/**
+!docs/
+!docs/_build/*
+!docs/_build/
+!docs/_build/html/*
+!docs/_build/html/
 
 # PyBuilder
 .pybuilder/
@@ -168,6 +168,6 @@ cython_debug/
 .vscode-server/
 
 # Personal not needed files
-**/inputs/
-**/outputs/
+inputs/
+outputs/
 
