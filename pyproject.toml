@@ -30,3 +30,34 @@ convention = "google"
 
 [tool.black]
 line-length = 120
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "example_package_Lorenzo_Delcroix"
+version = "0.0.1"
+license-files = { paths = ["LICENSE"] }
+dependencies = [
+  "cryptography",
+  "click>=7, <9, != 8.0.0",
+  "python-dateutil==2.8.*",
+  "numpy~=1.21.4",
+]
+authors = [
+  { name="Lorenzo Delcroix", email="" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Private :: Do Not Upload",
+    "Natural Language :: English",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
