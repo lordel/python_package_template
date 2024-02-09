@@ -1,9 +1,13 @@
+# A manifest file specifies which files and folders to bundle up
+# when distributing a package.
+# use include to add a file
+# use graft to include all files in a directory
+
+# Specify files in root
 include setup.py
 include MANIFEST.in
 include LICENSE
 include README.md
 
-graft tests
-graft examples
+# Specify directories to include - for instance all modules/subpackage folders
 graft docs
-graft src
